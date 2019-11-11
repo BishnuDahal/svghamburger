@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hamburger:hover .lineone,
+.hamburger:hover .linetwo,
+.hamburger:hover .linethree{
+    transform-origin:50% 50%;
+   animation: increase 0.75s ease-in-out infinite;
+}
+@keyframes increase{
+    0%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scaleX(1.5);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+.hamburger:hover .linetwo{
+    animation-delay: 75ms;
+}
+.hamburger:hover .linetwo{
+    animation-delay: 150ms;
+}
